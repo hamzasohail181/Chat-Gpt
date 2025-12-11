@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHS College | Campus Life</title>
-<link rel="stylesheet" href="/CSS/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHS College | Campus Life</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo-area">
-            <img src="/Images/MHS.png" alt="MHS Logo">
-            <h1>MHS College</h1>
-        </div>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a class="active" href="campus-life.html">Campus Life</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Student Login</a></li>
-            </ul>
-        </nav>
+  <header class="navbar">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="Images/MHS.png" alt="MHS logo" class="logo" />
+        <span class="brand-title">MHS College</span>
+      </div>
+      <button id="menuBtnCampus" class="menu-btn" aria-controls="navCampus">☰</button>
+      <nav id="navCampus" class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="admissions.html">Admissions</a>
+        <a class="active" href="campus-life.html">Campus Life</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="cta">Student Login</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="hero" style="background-image: url('/Images/hero-bg.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h2>Campus Life</h2>
-        <p>Experience the vibrant student life, events, and facilities at MHS College.</p>
+  <main class="container">
+    <section class="hero small-hero" style="background-image:url('Images/campus-hero.jpg')">
+      <div class="hero-inner">
+        <h1>Campus Life</h1>
+        <p class="lead">Student clubs, events, sports and creative spaces.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Gallery & Events</h2>
+      <div class="grid gallery-grid">
+        <div class="gallery-item"><img src="Images/campus1.jpg" alt="Event 1"></div>
+        <div class="gallery-item"><img src="Images/campus2.jpg" alt="Event 2"></div>
+        <div class="gallery-item"><img src="Images/campus3.jpg" alt="Event 3"></div>
+        <div class="gallery-item"><img src="Images/campus4.jpg" alt="Event 4"></div>
+        <div class="gallery-item"><img src="Images/campus5.jpg" alt="Event 5"></div>
+        <div class="gallery-item"><img src="Images/campus6.jpg" alt="Event 6"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2025 MHS College</div>
     </div>
-</section>
-
-<section class="gallery container">
-    <h2 class="section-title">Student Life & Events</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item"><img src="/Images/campus1.jpg" alt="Campus Event 1"></div>
-        <div class="gallery-item"><img src="/Images/campus2.jpg" alt="Campus Event 2"></div>
-        <div class="gallery-item"><img src="/Images/campus3.jpg" alt="Campus Event 3"></div>
-        <div class="gallery-item"><img src="/Images/campus4.jpg" alt="Campus Event 4"></div>
-        <div class="gallery-item"><img src="/Images/campus5.jpg" alt="Campus Event 5"></div>
-        <div class="gallery-item"><img src="/Images/campus6.jpg" alt="Campus Event 6"></div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 MHS College — All Rights Reserved</p>
-</footer>
-<script src="/JS/script.js"></script>
+  </footer>
+  <script src="JS/script.js"></script>
 </body>
 </html>

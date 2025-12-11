@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHS College | Student Dashboard</title>
-<link rel="stylesheet" href="/CSS/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHS College | Dashboard</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-
-<aside class="sidebar">
-    <div class="sidebar-logo">
-        <img src="/Images/MHS.png" alt="MHS Logo">
-        <h1>MHS College</h1>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <img src="Images/MHS.png" alt="MHS" class="logo-sm" />
+      <h3>MHS Student</h3>
     </div>
-    <nav class="sidebar-nav">
-        <ul>
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li><a href="#">My Courses</a></li>
-            <li><a href="#">Grades</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
+    <nav class="side-nav">
+      <a class="active" href="#">Dashboard</a>
+      <a href="#">My Courses</a>
+      <a href="#">Grades</a>
+      <a href="#">Profile</a>
+      <a href="#">Notifications</a>
     </nav>
-</aside>
+    <div class="sidebar-bottom">
+      <button id="signOut" class="btn-outline block">Sign Out</button>
+    </div>
+  </aside>
 
-<main class="main-content">
-    <header class="dashboard-header">
-        <h2>Welcome, John Doe</h2>
-        <p>Student ID: 123456</p>
+  <main class="main-content">
+    <header class="dash-header">
+      <h1 id="welcome">Welcome, Student</h1>
+      <div class="meta">Student ID: <span id="sid">—</span></div>
     </header>
 
-    <section class="cards">
-        <div class="card">
-            <h3>My Courses</h3>
-            <p>5 Enrolled Courses</p>
-        </div>
-        <div class="card">
-            <h3>Grades</h3>
-            <p>View your latest grades</p>
-        </div>
-        <div class="card">
-            <h3>Profile</h3>
-            <p>Update your personal info</p>
-        </div>
-        <div class="card">
-            <h3>Notifications</h3>
-            <p>3 New Messages</p>
-        </div>
+    <section class="cards grid-4">
+      <div class="stat card">
+        <h3>Enrolled Courses</h3>
+        <p id="coursesCount">0</p>
+      </div>
+      <div class="stat card">
+        <h3>Pending Assignments</h3>
+        <p>2</p>
+      </div>
+      <div class="stat card">
+        <h3>Notifications</h3>
+        <p id="notesCount">3</p>
+      </div>
+      <div class="stat card">
+        <h3>Applications</h3>
+        <p id="appsCount">0</p>
+      </div>
     </section>
 
-    <section class="recent-activity">
-        <h3>Recent Activity</h3>
-        <ul>
-            <li>Submitted Assignment: Computer Science 101</li>
-            <li>New Grade Posted: Business Administration</li>
-            <li>Profile Updated Successfully</li>
-            <li>Event: Campus Orientation Scheduled</li>
-        </ul>
+    <section class="section">
+      <h2 class="section-title">Recent Activity</h2>
+      <ul id="activityList">
+        <li>Welcome to the student dashboard.</li>
+      </ul>
     </section>
-</main>
+  </main>
 
-<script src="/JS/script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>

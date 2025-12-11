@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHS College | Admissions</title>
-<link rel="stylesheet" href="/CSS/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHS College | Admissions</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo-area">
-            <img src="/Images/MHS.png" alt="MHS Logo">
-            <h1>MHS College</h1>
-        </div>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a class="active" href="admissions.html">Admissions</a></li>
-                <li><a href="campus-life.html">Campus Life</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Student Login</a></li>
-            </ul>
-        </nav>
+  <header class="navbar">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="Images/MHS.png" alt="MHS logo" class="logo" />
+        <span class="brand-title">MHS College</span>
+      </div>
+      <button id="menuBtnAdmissions" class="menu-btn" aria-controls="navAdmissions">☰</button>
+      <nav id="navAdmissions" class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a class="active" href="admissions.html">Admissions</a>
+        <a href="campus-life.html">Campus Life</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="cta">Student Login</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="hero" style="background-image: url('/Images/hero-bg.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h2>Admissions</h2>
-        <p>Start your journey with MHS College. Learn about eligibility, requirements, and deadlines.</p>
-    </div>
-</section>
+  <main class="container">
+    <section class="hero small-hero" style="background-image:url('Images/admissions-hero.jpg')">
+      <div class="hero-inner">
+        <h1>Admissions</h1>
+        <p class="lead">Find eligibility, process steps, deadlines and scholarship info.</p>
+      </div>
+    </section>
 
-<section class="admissions container">
-    <h2 class="section-title">Admission Process</h2>
-    <div class="admissions-grid">
-        <div class="admissions-card">
-            <h3>Step 1: Choose Program</h3>
-            <p>Review all programs and select the one that aligns with your career goals.</p>
+    <section class="section">
+      <h2 class="section-title">Admission Process</h2>
+      <div class="grid steps">
+        <div class="step">
+          <h3>1. Choose Program</h3>
+          <p>Pick the program that matches your goals.</p>
         </div>
-        <div class="admissions-card">
-            <h3>Step 2: Check Requirements</h3>
-            <p>Ensure you meet the academic qualifications and prerequisites for your chosen program.</p>
+        <div class="step">
+          <h3>2. Check Requirements</h3>
+          <p>Review prerequisites and academic qualifications.</p>
         </div>
-        <div class="admissions-card">
-            <h3>Step 3: Submit Application</h3>
-            <p>Complete the online application form with all required documents and details.</p>
+        <div class="step">
+          <h3>3. Submit Application</h3>
+          <p>Apply online with required documents.</p>
         </div>
-        <div class="admissions-card">
-            <h3>Step 4: Admission Review</h3>
-            <p>The admissions team reviews applications and communicates decisions to applicants.</p>
+        <div class="step">
+          <h3>4. Review & Decision</h3>
+          <p>Admissions team will evaluate and notify applicants.</p>
         </div>
-        <div class="admissions-card">
-            <h3>Step 5: Confirm Enrollment</h3>
-            <p>Once accepted, confirm your enrollment and prepare to start your academic journey.</p>
+        <div class="step">
+          <h3>5. Confirm Enrollment</h3>
+          <p>Accept offer and complete registration tasks.</p>
         </div>
-    </div>
-    <div class="cta" style="text-align:center; margin-top:2rem;">
-        <a href="application.html" class="apply-btn-large">Apply Now</a>
-    </div>
-</section>
+      </div>
 
-<footer>
-    <p>© 2025 MHS College — All Rights Reserved</p>
-</footer>
-<script src="/JS/script.js"></script>
+      <div class="center">
+        <a href="application.html" class="btn-primary">Apply Online</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2025 MHS College</div>
+    </div>
+  </footer>
+  <script src="JS/script.js"></script>
 </body>
 </html>

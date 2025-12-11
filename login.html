@@ -1,55 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHS College | Student Login</title>
-<link rel="stylesheet" href="/CSS/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHS College | Student Login</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
-<body>
+<body class="centered-page">
+  <div class="login-card">
+    <div class="login-left">
+      <h2>Welcome Back</h2>
+      <p class="muted">Sign in to access your student dashboard. Demo login: <strong>admin / 12345</strong></p>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" placeholder="username" required />
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="password" required />
+        <button class="btn-primary" type="submit">Sign In</button>
+      </form>
 
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo-area">
-            <img src="/Images/MHS.png" alt="MHS Logo">
-            <h1>MHS College</h1>
-        </div>
-       
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="campus-life.html">Campus Life</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a class="active" href="login.html">Student Login</a></li>
-            </ul>
-        </nav>
+      <a href="application.html" class="btn-outline block">Apply for Admission</a>
     </div>
-</header>
 
-<section class="hero login-hero" style="background-image: url('/Images/hero-bg.jpg');">
-    <div class="overlay"></div>
-    <div class="login-container container">
-        <h2>Student Login</h2>
-        <form class="login-form" action="#" method="POST">
-            <div class="form-group">
-                <label for="student-email">Email Address</label>
-                <input type="email" id="student-email" name="student-email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="student-password">Password</label>
-                <input type="password" id="student-password" name="student-password" placeholder="Enter your password" required>
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-            <p class="signup-link">Don't have an account? <a href="application.html">Apply Now</a></p>
-        </form>
+    <div class="login-right" style="background-image:url('Images/login-illustration.jpg')">
+      <div class="overlay"> </div>
     </div>
-</section>
+  </div>
 
-<footer>
-    <p>© 2025 MHS College — All Rights Reserved</p>
-</footer>
-<script src="/JS/script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>

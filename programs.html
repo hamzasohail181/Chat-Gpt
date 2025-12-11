@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MHS College | Programs</title>
-<link rel="stylesheet" href="/CSS/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHS College | Programs</title>
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo-area">
-            <img src="/Images/MHS.png" alt="MHS Logo">
-            <h1>MHS College</h1>
-        </div>
-        
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="campus-life.html">Campus Life</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Student Login</a></li>
-            </ul>
-        </nav>
+  <header class="navbar">
+    <div class="container nav-row">
+      <div class="brand">
+        <img src="Images/MHS.png" alt="MHS logo" class="logo" />
+        <span class="brand-title">MHS College</span>
+      </div>
+      <button id="menuBtnPrograms" class="menu-btn" aria-controls="navPrograms">☰</button>
+      <nav id="navPrograms" class="navlinks">
+        <a href="index.html">Home</a>
+        <a class="active" href="programs.html">Programs</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="campus-life.html">Campus Life</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="cta">Student Login</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="hero" style="background-image: url('/Images/hero-bg.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h2>Our Programs</h2>
-        <p>Explore a variety of courses designed to shape your future and prepare you for success.</p>
+  <main class="container">
+    <section class="hero small-hero" style="background-image:url('Images/programs-hero.jpg')">
+      <div class="hero-inner">
+        <h1>Our Programs</h1>
+        <p class="lead">Undergraduate and diploma programs across technology, business, arts, and sciences.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">All Programs</h2>
+      <div class="grid cards-3">
+        <!-- Repeat program cards -->
+        <article class="card">
+          <img src="Images/program-cs.jpg" alt="">
+          <h3>Computer Science</h3>
+          <p>Software engineering, AI, cloud, and data science tracks.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+
+        <article class="card">
+          <img src="Images/program-business.jpg" alt="">
+          <h3>Business Administration</h3>
+          <p>Finance, marketing, HR and entrepreneurship coursework.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+
+        <article class="card">
+          <img src="Images/program-engineering.jpg" alt="">
+          <h3>Engineering</h3>
+          <p>Mechanical, Civil & Electrical engineering with labs.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+
+        <article class="card">
+          <img src="Images/program-psych.jpg" alt="">
+          <h3>Psychology</h3>
+          <p>Foundations in psychology, research methods and counseling.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+
+        <article class="card">
+          <img src="Images/program-media.jpg" alt="">
+          <h3>Media & Communications</h3>
+          <p>Journalism, digital media production and PR.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+
+        <article class="card">
+          <img src="Images/program-arts.jpg" alt="">
+          <h3>Fine Arts</h3>
+          <p>Painting, graphic design, music and creative practice.</p>
+          <a href="#" class="link">View curriculum →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© 2025 MHS College</div>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-</section>
-
-<section class="programs container">
-    <h2 class="section-title">All Programs</h2>
-    <div class="program-grid">
-        <div class="program-card">
-            <h3>Computer Science</h3>
-            <p>Learn software development, AI, data science, and modern computing technologies.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-        <div class="program-card">
-            <h3>Business Administration</h3>
-            <p>Develop leadership, management, and entrepreneurial skills for the corporate world.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-        <div class="program-card">
-            <h3>Media & Communications</h3>
-            <p>Train in journalism, digital media, and professional communication techniques.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-        <div class="program-card">
-            <h3>Engineering</h3>
-            <p>Specialize in mechanical, civil, or electrical engineering with hands-on labs.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-        <div class="program-card">
-            <h3>Psychology</h3>
-            <p>Study human behavior, mental health, and counseling techniques.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-        <div class="program-card">
-            <h3>Fine Arts</h3>
-            <p>Explore painting, music, design, and creative expression through structured courses.</p>
-            <a href="#">View Curriculum</a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 MHS College — All Rights Reserved</p>
-</footer>
-<script src="/JS/script.js"></script>
+  </footer>
+  <script src="JS/script.js"></script>
 </body>
 </html>
